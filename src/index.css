@@ -68,7 +68,7 @@ body {
         @apply fixed z-50 w-full;
 
         div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-15 px-5 container mx-auto;
+            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
         }
 
         p {
@@ -100,11 +100,11 @@ body {
         }
 
         .right-leaf {
-            @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-20;
+            @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24;
         }
 
         .body {
-            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-15;
+            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
 
             .content {
                 @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
@@ -148,7 +148,7 @@ body {
         }
 
         .list {
-            @apply container md:mx-15 mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-15;
+            @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
 
             .popular {
                 @apply space-y-8 w-full md:w-fit;
