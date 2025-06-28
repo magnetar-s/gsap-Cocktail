@@ -7,6 +7,10 @@ const About = () => {
     const titleSplit = SplitText.create("#about h2", {
       type: "words",
     });
+    
+    const paraSplit = SplitText.create(".sub-content p", {
+      type: "words",
+    });
 
     const scrollTimeline = gsap.timeline({
       scrollTrigger: {
@@ -23,6 +27,13 @@ const About = () => {
         ease: "expo.out",
         stagger: 0.04,
       })
+      .from(paraSplit.words, {
+        opacity: 0,
+        duration: 1,
+        yPercent: 100,
+        ease: "expo.out",
+        stagger: 0.02,
+      }, "<")
       .from(
         ".top-grid div, .bottom-grid div",
         {
@@ -32,7 +43,7 @@ const About = () => {
           stagger: 0.06,
         },
         "-=0.5"
-      )
+      );
   });
   return (
     <div id="about">
@@ -65,7 +76,7 @@ const About = () => {
         </div>
       </div>
 
-       <div className="top-grid">
+      <div className="top-grid">
         <div className="md:col-span-3">
           <div className="noisy" />
           <img src="/images/abt1.png" alt="grid-img-1" />
